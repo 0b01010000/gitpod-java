@@ -1,4 +1,4 @@
-package up_05;
+package github.java;
 
 import java.util.Scanner;
 

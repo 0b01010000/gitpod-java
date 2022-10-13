@@ -1,3 +1,4 @@
+package github.java;
 public class IsAVowel {
     public static void main(String[] args) {
         System.out.println(testLetter("e")); // Vowel

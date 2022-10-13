@@ -1,3 +1,4 @@
+package github.java;
 import java.util.Scanner;
 
 public class LargestNumber {

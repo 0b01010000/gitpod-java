@@ -1,3 +1,4 @@
+package github.java;
 public class _2DArray {
     public static void main(String[] args) {
         int[][] a = {

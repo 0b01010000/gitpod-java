@@ -1,3 +1,4 @@
+package github.java;
 public class TimesTable02 {
     public static void main(String[] args) {
         int i = 0;

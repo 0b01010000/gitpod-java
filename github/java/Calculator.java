@@ -1,3 +1,4 @@
+package github.java;
 public class Calculator {
 
     static double sum(double ...varargs) {

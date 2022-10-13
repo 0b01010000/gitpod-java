@@ -1,3 +1,4 @@
+package github.java;
 /**
  *  Check Odd or Even
  *  Given an integer N, check whether it is odd or even.

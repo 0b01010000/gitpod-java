@@ -1,6 +1,5 @@
-package up_04;
-
-public class HelloWorld {
+package github.java;
+public class Hello02 {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
     }
