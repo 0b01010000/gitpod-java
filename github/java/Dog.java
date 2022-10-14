@@ -1,6 +1,19 @@
 package github.java;
 
 public class Dog {
+    /**
+     * 
+     * 
+     *             '__'
+     *             (oo)
+     *     +========\/
+     *    / || %%% ||
+     *   *  ||-----||
+     *      ""     ""
+     * 
+     * 
+     * @param args
+     */
 
     public static void main(String[] args) {
         System.out.println("          '__'");
