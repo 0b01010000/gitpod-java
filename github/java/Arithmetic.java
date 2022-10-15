@@ -1,38 +1,40 @@
 package github.java;
 
 public class Arithmetic {
-    int x = 0;
-    int y = 0;
+    int[] nums1;
+    double[] nums2;
 
-    Arithmetic(int x, int y) {
-        this.x = x;
-        this.y = y;
+    Arithmetic(int ...ns) {
+        this.nums1 = ns;
     }
 
-    int[] abs() {
-        int[] absValues = new int[2];
-        absValues[0] = (x < 0 ? -x : x);
-        absValues[1] = (y < 0 ? -y : y);
-        return absValues;  
+    Arithmetic(double ...ns) {
+        this.nums2 = ns;
     }
 
+    /**
+     * Adds Integer numbers
+     * 
+     * @return the sum of all the numbers passed to the constructor
+     */
     int add() {
-        return x + y;
+        int sum = 0;
+        for (int i = 0; i<this.nums1.length; i++) {
+            sum += this.nums1[i];
+        }
+        return sum;
     }
 
-    int subtract() {
-        return x - y;
-    }
-
-    int multiply() {
-        return x * y;
-    }
-
-    double divide() {
-        return ((double) x / y);
-    }
-
-    int modulus() {
-        return x % y;
+    /**
+     *  Adds Float Point Numbers
+     * 
+     * @return the sum of all the numbers passed to the constructor
+     */
+    double addFloatPointNums() {
+        double sum = 0;
+        for (int i = 0; i<this.nums2.length; i++) {
+            sum += this.nums2[i];
+        }
+        return sum;
     }
 }
