@@ -5,7 +5,7 @@ public class Arithmetic {
     double[] nums2;
 
     Arithmetic(int ...ns) {
-        this.nums1 = ns;
+        this.nums1 =  ns;
     }
 
     Arithmetic(double ...ns) {
@@ -13,28 +13,25 @@ public class Arithmetic {
     }
 
     /**
-     * Adds Integer numbers
+     * Adds Integer|Double numbers
      * 
-     * @return the sum of all the numbers passed to the constructor
+     * @return a double value of the sum of the numbers passed to the constructor
      */
-    int add() {
-        int sum = 0;
+    double add() {
+        double sum = 0;
+        
+        if (this.nums1 == null) {
+            for (int i = 0; i<this.nums2.length; i++) {
+                sum += this.nums2[i];
+            }
+            return sum;
+        } 
+
         for (int i = 0; i<this.nums1.length; i++) {
             sum += this.nums1[i];
         }
-        return sum;
-    }
 
-    /**
-     *  Adds Float Point Numbers
-     * 
-     * @return the sum of all the numbers passed to the constructor
-     */
-    double addFloatPointNums() {
-        double sum = 0;
-        for (int i = 0; i<this.nums2.length; i++) {
-            sum += this.nums2[i];
-        }
         return sum;
+
     }
 }
